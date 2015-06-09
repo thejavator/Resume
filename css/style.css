@@ -24,7 +24,7 @@ Main components
 
 
 #cd-timeline {
-    font-family: "Robot";
+    font-family: "Robot",FontAwesome;
     position: relative;
     padding: 2em 0;
     margin-top: 2em;
@@ -86,8 +86,10 @@ Main components
     height: 40px;
     border-radius: 50%;
 }
-.cd-timeline-img img {
+.cd-timeline-img .icon {
     display: block;
+    font-size: 25px;
+    color: white;
     width: 24px;
     height: 24px;
     position: relative;
@@ -96,14 +98,8 @@ Main components
     margin-left: -12px;
     margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-    background: #75ce66;
-}
-.cd-timeline-img.cd-movie {
-    background: #c03b44;
-}
-.cd-timeline-img.cd-location {
-    background: #f0ca45;
+.cd-timeline-img.cd-img {
+    background: #307bbb;
 }
 @media only screen and (min-width: 1170px) {
     .cd-timeline-img {
@@ -186,10 +182,12 @@ Main components
 .cd-timeline-content {
     position: relative;
     margin-left: 60px;
-    background: white;
-    border-radius: 0.25em;
     padding: 1em;
-    box-shadow: 0 3px 0 #d7e4ed;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-content:after {
     content: "";
@@ -224,7 +222,7 @@ Main components
 }
 .cd-timeline-content .cd-date {
     font-size: 20px;
-    font-family: "Roboto";
+    font-family: "Robot",FontAwesome;
     float: left;
     padding: .8em 0;
     opacity: .7;
@@ -242,11 +240,11 @@ Main components
 @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
         font-size: 20px;
-        font-size: 2rem;
+        font-size: 1.5em;
     }
     .cd-timeline-content p {
         font-size: 16px;
-        font-size: 1.5rem;
+        font-size: 0.9em;
         font-family: "Roboto";
     }
     .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
