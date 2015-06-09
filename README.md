@@ -1,4 +1,6 @@
 
+[Demo](http://preview.gwgtwg5nfeyfzuxruo2clqfhi0iicnmiwo4pya40jagzxgvi.box.codeanywhere.com/)
+
 ##TODO
 
 ####Content
@@ -10,11 +12,12 @@
 * Map
 
 ####UI
-* Nav bar center
 * Color
 * Order
 * Animation
-
+* Icons
+* Links
+* 
 
 
 ##Uses
