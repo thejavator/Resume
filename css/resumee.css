@@ -437,8 +437,8 @@ footer .footer-below {
     left: 2%;
     position: relative;
     font-size: 1em;
-    font-weight: bolder;
-    font-family: monospace;
+    font-weight: 300;
+    font-family: "Roboto";
     color: #fff;
 }
 
@@ -463,4 +463,21 @@ progress::-moz-progress-bar {
 
 .fa{
     padding-right: 10px;
+}
+
+.label {
+    font-size: 1em;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }

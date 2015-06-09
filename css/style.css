@@ -37,13 +37,12 @@ Main components
     top: 0;
     left: 18px;
     height: 100%;
-    width: 4px;
+    width: 3px;
     background: #d7e4ed;
 }
 @media only screen and (min-width: 1170px) {
     #cd-timeline {
         margin-top: 3em;
-        margin-bottom: 3em;
     }
     #cd-timeline::before {
         left: 50%;
@@ -207,6 +206,7 @@ Main components
 .cd-timeline-content p {
     margin: 1em 0;
     line-height: 1.6;
+    font-size: 0.9em;
     font-family: "Roboto";
 
 }
