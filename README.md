@@ -1,8 +1,7 @@
-This is resumee ReadMe
 
-###TODO
+##TODO
 
-##Content
+####Content
 * Name
 * Phone number
 * Email
@@ -10,13 +9,15 @@ This is resumee ReadMe
 * Resume
 * Map
 
-##UI
+####UI
 * Nav bar center
 * Color
 * Order
+* Animation
 
 
 
-###Uses
-http://bootswatch.com/paper/
-http://fontawesome.io/
+##Uses
+* [Bootstrap Paper theme](http://bootswatch.com/paper/)
+* [Bootstrap freelancer template](http://startbootstrap.com/template-overviews/freelancer/)
+* [FontAwesome](http://fontawesome.io/)
