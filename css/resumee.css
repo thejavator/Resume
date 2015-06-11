@@ -428,6 +428,7 @@ footer .footer-below {
 .panel-standard > .panel-heading .badge {
     color: #2196f3;
     background-color: #ffffff;
+    margin-top: 10px;
 }
 .panel-standard > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #307bbb;
@@ -488,7 +489,22 @@ progress::-moz-progress-bar {
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-/*    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+    /*    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+}
+.list-group-item {
+    position:relative;
+    display:block;
+    padding:5px 15px;
+    margin-bottom:-1px;
+    background-color:#ffffff;
+    border:1px solid #dddddd
+}
+.list-group-item span{
+    font-family: "Roboto";
+    font-weight: 200;
+}
+.list-group-item>.badge{
+    margin-top: 5px;
 }
