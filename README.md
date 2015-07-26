@@ -10,6 +10,9 @@
 * Address
 * Resume
 * Map
+* Content collector
+* Forms
+* Pdf generator
 
 ####UI
 * Color
@@ -17,7 +20,7 @@
 * Animation
 * Icons
 * Links
-* 
+
 
 
 ##Uses
