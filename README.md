@@ -1,5 +1,5 @@
 
-[Demo](http://preview.gwgtwg5nfeyfzuxruo2clqfhi0iicnmiwo4pya40jagzxgvi.box.codeanywhere.com/)
+[Demo](http://thejavator.github.io/Resume/)
 
 ##TODO
 
