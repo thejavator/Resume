@@ -1,0 +1,416 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>JSON Editor Example</title>
+
+  <!-- placeholders for the theme switcher -->
+  <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" id="icon_stylesheet" href="./JSON Editor Example_files/font-awesome.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="span8 col-md-8 columns eight large-8">
+        <h2>Editor</h2>
+        <p>Below is the editor generated from the JSON Schema.</p>
+
+        <div id="editor">
+          <div data-schemaid="root" data-schematype="object" data-schemapath="root" style="position: relative;">
+
+            <div class="well well-sm" style="padding-bottom: 0px;">
+              <div>
+                <div>
+                  <div class="row">
+                    <div data-schematype="array" data-schemapath="root.skills" class="col-md-12">
+                      <h3><span>skills</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Expand" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-right"></i> </button></div></h3>
+                      <p>List out your professional skill-set</p>
+                      <div style="display: none;"></div>
+                      <div class="well well-sm" style="padding-bottom: 0px; display: none;">
+                        <div style="display: none;"></div>
+                        <div class="btn-group" style="display: none;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                          <button
+                          type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                        </div>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div data-schematype="object" data-schemapath="root.basics" class="col-md-12" style="position: relative;">
+                      <h3><span>basics</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Edit JSON" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> JSON</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; left: 0px; top: 34px; display: none;"><textarea class="form-control" style="height: 170px; width: 300px; display: block;"></textarea><button type="button" title="Save" class="btn btn-default json-editor-btn-save "><i class="fa fa-save"></i> Save</button><button type="button" title="Cancel" class="btn btn-default json-editor-btn-cancel "><i class="fa fa-ban"></i> Cancel</button></div></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Object Properties" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> Properties</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; left: 0px; top: 34px; display: none;"><div class="property-selector" style="width: 295px; max-height: 160px; padding: 5px 0px 5px 5px; overflow-y: auto; overflow-x: hidden;"><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">name<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">label<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">image<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">email<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">phone<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">url<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">summary<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">location<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">profiles<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div></div><input type="text" class="form-control" placeholder="Property name..." style="width: 220px; margin-bottom: 0px; display: inline-block;"><button type="button" title="add" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> add</button><div style="clear: both;"></div></div></div></h3>
+                      <div style="display: none;"></div>
+                      <div class="well well-sm" style="padding-bottom: 0px;">
+                        <div>
+                          <div>
+                            <div class="row">
+                              <div data-schematype="string" data-schemapath="root.basics.name" class="col-md-12">
+                                <div class=" form-group"><label class=" control-label">name</label><input type="text" class="form-control" name="root[basics][name]"></div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="string" data-schemapath="root.basics.label" class="col-md-12">
+                                <div class=" form-group"><label class=" control-label">label</label><input type="text" class="form-control" name="root[basics][label]">
+                                  <p class="help-block">e.g. Web Developer</p>
+                                </div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="string" data-schemapath="root.basics.image" class="col-md-12">
+                                <div class=" form-group"><label class=" control-label">image</label><input type="text" class="form-control" name="root[basics][image]">
+                                  <p class="help-block">URL (as per RFC 3986) to a image in JPEG or PNG format</p>
+                                </div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="string" data-schemapath="root.basics.email" class="col-md-12">
+                                <div class=" form-group"><label class=" control-label">email</label><input type="email" class="form-control" data-schemaformat="email" name="root[basics][email]">
+                                  <p class="help-block">e.g. thomas@gmail.com</p>
+                                </div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="string" data-schemapath="root.basics.phone" class="col-md-12">
+                                <div class=" form-group"><label class=" control-label">phone</label><input type="text" class="form-control" name="root[basics][phone]">
+                                  <p class="help-block">Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923</p>
+                                </div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="string" data-schemapath="root.basics.url" class="col-md-12">
+                                <div class=" form-group"><label class=" control-label">url</label><input type="uri" class="form-control" data-schemaformat="uri" name="root[basics][url]">
+                                  <p class="help-block">URL (as per RFC 3986) to your website, e.g. personal homepage</p>
+                                </div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="string" data-schemapath="root.basics.summary" class="col-md-12">
+                                <div class=" form-group"><label class=" control-label">summary</label><input type="text" class="form-control" name="root[basics][summary]">
+                                  <p class="help-block">Write a short 2-3 sentence biography about yourself</p>
+                                </div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="object" data-schemapath="root.basics.location" class="col-md-12" style="position: relative;">
+                                <h3><span>location</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Edit JSON" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> JSON</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><textarea class="form-control" style="height: 170px; width: 300px; display: block;"></textarea><button type="button" title="Save" class="btn btn-default json-editor-btn-save "><i class="fa fa-save"></i> Save</button><button type="button" title="Cancel" class="btn btn-default json-editor-btn-cancel "><i class="fa fa-ban"></i> Cancel</button></div></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Object Properties" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> Properties</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><div class="property-selector" style="width: 295px; max-height: 160px; padding: 5px 0px 5px 5px; overflow-y: auto; overflow-x: hidden;"><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">address<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">postalCode<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">city<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">countryCode<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">region<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div></div><input type="text" class="form-control" placeholder="Property name..." style="width: 220px; margin-bottom: 0px; display: inline-block;"><button type="button" title="add" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> add</button><div style="clear: both;"></div></div></div></h3>
+                                <div style="display: none;"></div>
+                                <div class="well well-sm" style="padding-bottom: 0px;">
+                                  <div>
+                                    <div>
+                                      <div class="row">
+                                        <div data-schematype="string" data-schemapath="root.basics.location.address" class="col-md-12">
+                                          <div class=" form-group"><label class=" control-label">address</label><input type="text" class="form-control" name="root[basics][location][address]">
+                                            <p class="help-block">To add multiple address lines, use . For example, 1234 Glücklichkeit Straße Hinterhaus 5. Etage li.</p>
+                                          </div>
+                                          <div></div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div data-schematype="string" data-schemapath="root.basics.location.postalCode" class="col-md-12">
+                                          <div class=" form-group"><label class=" control-label">postalCode</label><input type="text" class="form-control" name="root[basics][location][postalCode]"></div>
+                                          <div></div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div data-schematype="string" data-schemapath="root.basics.location.city" class="col-md-12">
+                                          <div class=" form-group"><label class=" control-label">city</label><input type="text" class="form-control" name="root[basics][location][city]"></div>
+                                          <div></div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div data-schematype="string" data-schemapath="root.basics.location.countryCode" class="col-md-12">
+                                          <div class=" form-group"><label class=" control-label">countryCode</label><input type="text" class="form-control" name="root[basics][location][countryCode]">
+                                            <p class="help-block">code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN</p>
+                                          </div>
+                                          <div></div>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div data-schematype="string" data-schemapath="root.basics.location.region" class="col-md-12">
+                                          <div class=" form-group"><label class=" control-label">region</label><input type="text" class="form-control" name="root[basics][location][region]">
+                                            <p class="help-block">The general region where you live. Can be a US state, or a province, for instance.</p>
+                                          </div>
+                                          <div></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div data-schematype="array" data-schemapath="root.basics.profiles" class="col-md-12">
+                                <h3><span>profiles</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                                <p>Specify any number of social networks that you participate in</p>
+                                <div style="display: none;"></div>
+                                <div class="well well-sm" style="padding-bottom: 0px;">
+                                  <div></div>
+                                  <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete "
+                                    style="display: none;"><i class="fa fa-times"></i> Last item</button><button type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button></div>
+                                  </div>
+                                  <div></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.volunteer" class="col-md-12">
+                        <h3><span>volunteer</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div>
+                            <div data-schematype="object" data-schemapath="root.volunteer.0" style="position: relative;">
+                              <h3><span>item 1</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button><button type="button" title="Delete item" class="btn btn-default json-editor-btn-delete  delete" data-i="0"><i class="fa fa-times"></i> item</button><button type="button" title="Move down" class="btn btn-default json-editor-btn-movedown  movedown" data-i="0" style="display: none;"><i class="fa fa-arrow-down"></i> </button></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Edit JSON" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> JSON</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><textarea class="form-control" style="height: 170px; width: 300px; display: block;"></textarea><button type="button" title="Save" class="btn btn-default json-editor-btn-save "><i class="fa fa-save"></i> Save</button><button type="button" title="Cancel" class="btn btn-default json-editor-btn-cancel "><i class="fa fa-ban"></i> Cancel</button></div></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Object Properties" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> Properties</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><div class="property-selector" style="width: 295px; max-height: 160px; padding: 5px 0px 5px 5px; overflow-y: auto; overflow-x: hidden;"><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">organization<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">position<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">url<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">startDate<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">endDate<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">summary<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">highlights<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div></div><input type="text" class="form-control" placeholder="Property name..." style="width: 220px; margin-bottom: 0px; display: inline-block;"><button type="button" title="add" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> add</button><div style="clear: both;"></div></div></div></h3>
+                              <div style="display: none;"></div>
+                              <div class="well well-sm" style="padding-bottom: 0px;">
+                                <div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div></div>
+                            </div>
+                          </div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete "><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.education" class="col-md-12">
+                        <h3><span>education</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div></div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.awards" class="col-md-12">
+                        <h3><span>awards</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <p>Specify any awards you have received throughout your professional career</p>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div></div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.publications" class="col-md-12">
+                        <h3><span>publications</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <p>Specify your publications through your career</p>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div>
+                            <div data-schematype="object" data-schemapath="root.publications.0" style="position: relative;">
+                              <h3><span>item 1</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button><button type="button" title="Delete item" class="btn btn-default json-editor-btn-delete  delete" data-i="0"><i class="fa fa-times"></i> item</button><button type="button" title="Move down" class="btn btn-default json-editor-btn-movedown  movedown" data-i="0" style="display: none;"><i class="fa fa-arrow-down"></i> </button></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Edit JSON" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> JSON</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><textarea class="form-control" style="height: 170px; width: 300px; display: block;"></textarea><button type="button" title="Save" class="btn btn-default json-editor-btn-save "><i class="fa fa-save"></i> Save</button><button type="button" title="Cancel" class="btn btn-default json-editor-btn-cancel "><i class="fa fa-ban"></i> Cancel</button></div></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Object Properties" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> Properties</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><div class="property-selector" style="width: 295px; max-height: 160px; padding: 5px 0px 5px 5px; overflow-y: auto; overflow-x: hidden;"><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">name<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">publisher<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">releaseDate<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">url<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">summary<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div></div><input type="text" class="form-control" placeholder="Property name..." style="width: 220px; margin-bottom: 0px; display: inline-block;"><button type="button" title="add" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> add</button><div style="clear: both;"></div></div></div></h3>
+                              <div style="display: none;"></div>
+                              <div class="well well-sm" style="padding-bottom: 0px;">
+                                <div>
+                                  <div>
+                                    <div class="row">
+                                      <div data-schematype="string" data-schemapath="root.publications.0.name" class="col-md-12">
+                                        <div class=" form-group"><label class=" control-label">name</label><input type="text" class="form-control" name="root[publications][0][name]">
+                                          <p class="help-block">e.g. The World Wide Web</p>
+                                        </div>
+                                        <div></div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div data-schematype="string" data-schemapath="root.publications.0.publisher" class="col-md-12">
+                                        <div class=" form-group"><label class=" control-label">publisher</label><input type="text" class="form-control" name="root[publications][0][publisher]">
+                                          <p class="help-block">e.g. IEEE, Computer Magazine</p>
+                                        </div>
+                                        <div></div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div data-schematype="string" data-schemapath="root.publications.0.releaseDate" class="col-md-12">
+                                        <div class=" form-group"><label class=" control-label">releaseDate</label><input type="text" class="form-control" name="root[publications][0][releaseDate]">
+                                          <p class="help-block">e.g. 1990-08-01</p>
+                                        </div>
+                                        <div></div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div data-schematype="string" data-schemapath="root.publications.0.url" class="col-md-12">
+                                        <div class=" form-group"><label class=" control-label">url</label><input type="text" class="form-control" name="root[publications][0][url]">
+                                          <p class="help-block">e.g. http://www.computer.org.example.com/csdl/mags/co/1996/10/rx069-abs.html</p>
+                                        </div>
+                                        <div></div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div data-schematype="string" data-schemapath="root.publications.0.summary" class="col-md-12">
+                                        <div class=" form-group"><label class=" control-label">summary</label><input type="text" class="form-control" name="root[publications][0][summary]">
+                                          <p class="help-block">Short summary of publication. e.g. Discussion of the World Wide Web, HTTP, HTML.</p>
+                                        </div>
+                                        <div></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div></div>
+                            </div>
+                          </div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete "><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.work" class="col-md-12">
+                        <h3><span>work</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div></div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.languages" class="col-md-12">
+                        <h3><span>languages</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <p>List any other languages you speak</p>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div></div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.interests" class="col-md-12">
+                        <h3><span>interests</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div></div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.references" class="col-md-12">
+                        <h3><span>references</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <p>List references you have received</p>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div></div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="array" data-schemapath="root.projects" class="col-md-12">
+                        <h3><span>projects</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div></h3>
+                        <p>Specify career projects</p>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div></div>
+                          <div class="btn-group" style="display: inline-block;"><button type="button" title="Add item" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> item</button><button type="button" title="Delete Last item" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> Last item</button>
+                            <button
+                            type="button" title="Delete All" class="btn btn-default json-editor-btn-delete " style="display: none;"><i class="fa fa-times"></i> All</button>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div data-schematype="object" data-schemapath="root.meta" class="col-md-12" style="position: relative;">
+                        <h3><span>meta</span><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Collapse" class="btn btn-default json-editor-btn-collapse "><i class="fa fa-caret-square-o-down"></i> </button></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Edit JSON" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> JSON</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><textarea class="form-control" style="height: 170px; width: 300px; display: block;"></textarea><button type="button" title="Save" class="btn btn-default json-editor-btn-save "><i class="fa fa-save"></i> Save</button><button type="button" title="Cancel" class="btn btn-default json-editor-btn-cancel "><i class="fa fa-ban"></i> Cancel</button></div></div><div class="btn-group" style="margin-left: 10px;"><button type="button" title="Object Properties" class="btn btn-default json-editor-btn-edit "><i class="fa fa-pencil"></i> Properties</button><div style="background-color: white; border: 1px solid black; box-shadow: black 3px 3px; position: absolute; z-index: 10; display: none;"><div class="property-selector" style="width: 295px; max-height: 160px; padding: 5px 0px 5px 5px; overflow-y: auto; overflow-x: hidden;"><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">canonical<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">version<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div><div class=" checkbox" style="margin-top: 0px; padding-top: 0px; margin-bottom: 0px; padding-bottom: 0px; height: auto;"><label style="font-weight: normal; font-size: 14px;">lastModified<input type="checkbox" style="display: inline-block; width: auto; position: relative; float: left;"></label></div></div><input type="text" class="form-control" placeholder="Property name..." style="width: 220px; margin-bottom: 0px; display: inline-block;"><button type="button" title="add" class="btn btn-default json-editor-btn-add "><i class="fa fa-plus"></i> add</button><div style="clear: both;"></div></div></div></h3>
+                        <p>The schema version and any other tooling configuration lives here</p>
+                        <div style="display: none;"></div>
+                        <div class="well well-sm" style="padding-bottom: 0px;">
+                          <div>
+                            <div>
+                              <div class="row">
+                                <div data-schematype="string" data-schemapath="root.meta.canonical" class="col-md-12">
+                                  <div class=" form-group"><label class=" control-label">canonical</label><input type="text" class="form-control" name="root[meta][canonical]">
+                                    <p class="help-block">URL (as per RFC 3986) to latest version of this document</p>
+                                  </div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div data-schematype="string" data-schemapath="root.meta.version" class="col-md-12">
+                                  <div class=" form-group"><label class=" control-label">version</label><input type="text" class="form-control" name="root[meta][version]">
+                                    <p class="help-block">A version field which follows semver - e.g. v1.0.0</p>
+                                  </div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div data-schematype="string" data-schemapath="root.meta.lastModified" class="col-md-12">
+                                  <div class=" form-group"><label class=" control-label">lastModified</label><input type="text" class="form-control" name="root[meta][lastModified]">
+                                    <p class="help-block">Using ISO 8601 with YYYY-MM-DDThh:mm:ss</p>
+                                  </div>
+                                  <div></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+
+      </body>
+
+      </html>
