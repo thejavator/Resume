@@ -3,6 +3,12 @@
   "title": "Resume",
   "type": "object",
   "description": "Define the content of your resume",
+  "format": "grid",
+  "options": {
+    "disable_collapse": true,
+    "hidden": false,
+    "format": "grid"
+  },
   "additionalProperties": false,
   "properties": {
     "basics": {

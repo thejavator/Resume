@@ -11,6 +11,7 @@
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
   <script src="js/jsoneditor.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
 
 </head>
 
@@ -25,8 +26,8 @@
         <h2>JSON Output</h2>
         <button id='submit' class='btn btn-primary btn-xs'>Submit</button>
         <span id='valid_indicator' class='label label-primary'></span>
+        <a id="download" class='btn btn-primary btn-xs'>Download</a>
         <textarea id='output' style='width: 100%; height: 800px; font-family: monospace;' class='form-control'></textarea>
-
       </div>
     </div>
 
@@ -35,14 +36,26 @@
   <script>
     var $output = document.getElementById('output');
     var $submit = document.getElementById('submit');
+    var downloadAction = document.getElementById('download');
 
     var editor = initializeEditor();
 
     // Hook up the submit button to log to the console
     $submit.addEventListener('click', function() {
-      console.log(editor.getValue());
-      editor.setValue(JSON.parse($output.value));
+      var json = editor.getValue();
+      post_to_url('resume.php', {
+        'json-resume': JSON.stringify(json, null, 2)
+      });
     });
+
+
+    downloadAction.addEventListener('click', function() {
+      var json = editor.getValue();
+      var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(json));
+      downloadAction.setAttribute("href", dataStr);
+      downloadAction.setAttribute("download", "resume.json");
+    });
+
 
     // status whenever the editor changes
     editor.on('change', function() {
@@ -70,7 +83,6 @@
         ajax: true,
         disable_properties: true,
         disable_edit_json: true,
-        collapsed: true,
         theme: "bootstrap3",
         iconlib: "fontawesome4",
         schema: {
@@ -79,8 +91,30 @@
         },
       });
     }
+
+    function post_to_url(path, params, method) {
+      method = method || "post"; // Set method to post by default, if not specified.
+      var form = $(document.createElement("form"))
+        .attr({
+          "method": method,
+          "action": path
+        });
+      $.each(params, function(key, value) {
+        $.each(value instanceof Array ? value : [value], function(i, val) {
+          $(document.createElement("input"))
+            .attr({
+              "type": "hidden",
+              "name": key,
+              "value": val
+            })
+            .appendTo(form);
+        });
+      });
+      form.appendTo(document.body).submit();
+    }
   </script>
 
 
 </body>
+
 </html>

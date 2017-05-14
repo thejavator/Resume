@@ -1,10 +1,9 @@
 
 [Demo](http://thejavator.github.io/Resume/)
 
-[Editor](https://cdn.rawgit.com/thejavator/Resume/master/editor.html)
+[Editor](https://thejavator.github.io/Resume/edit)
 
 ##TODO
-
 ####Content
 * Name
 * Phone number
@@ -26,6 +25,8 @@
 
 
 ##Uses
+* [Resume Json Schema](https://jsonresume.org/schema/)
+* [Json Editor](https://github.com/jdorn/json-editor)
 * [Bootstrap Paper theme](http://bootswatch.com/paper/)
 * [Bootstrap freelancer template](http://startbootstrap.com/template-overviews/freelancer/)
 * [FontAwesome](http://fontawesome.io/)

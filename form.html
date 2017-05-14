@@ -11,9 +11,7 @@
     $(document).ready(function() {
       $(document).autoBars(function() {
         $.getJSON("elmehdi.json", function(json) {
-
           var data = { "resume" : json};
-
           var $html = $.handlebarTemplates['resume'](data);
           $('body').append($html);
         })
