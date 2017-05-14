@@ -4,20 +4,13 @@
 [Editor](https://thejavator.github.io/Resume/edit)
 
 ## TODO
-#### Content
-* Name
-* Phone number
-* Email
-* Address
-* Resume
-* Map
-* Content collector
-* Forms
 
 #### Features
 * Templates (http://mustache.github.io/)
 * Pdf generator
 * Online viewer
+* Linkedin connector
+* Map
 
 #### UI
 * Color
@@ -25,7 +18,6 @@
 * Animation
 * Icons
 * Links
-
 
 ## Uses
 * [Resume Json Schema](https://jsonresume.org/schema/)
