@@ -1,6 +1,8 @@
 
 [Demo](http://thejavator.github.io/Resume/)
 
+[Editor](https://cdn.rawgit.com/thejavator/Resume/master/editor.html)
+
 ##TODO
 
 ####Content

@@ -1,11 +1,11 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema",
   "title": "Resume Schema",
   "type": "object",
-  "description": "Describe your resume",
+  "additionalProperties": false,
   "properties": {
     "basics": {
       "type": "object",
-      "description": "Describe your profile",
       "additionalProperties": true,
       "properties": {
         "name": {
